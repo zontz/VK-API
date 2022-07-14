@@ -5,7 +5,7 @@ final class FriendDataSource: NSObject,UITableViewDataSource,UITableViewDelegate
     private lazy var dataSource = [Friend]()
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.identifire) as? FriendCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.identifier) as? FriendCell else {return UITableViewCell()}
         let friend = dataSource[indexPath.row]
         cell.configure(friend)
         return cell
@@ -32,7 +32,7 @@ final class FriendVC1: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = dataSource
         tableView.dataSource = dataSource
-        tableView.register(FriendCell.self, forCellReuseIdentifier: FriendCell.identifire)
+        tableView.register(FriendCell.self, forCellReuseIdentifier: FriendCell.identifier)
         return tableView
     }()
     

@@ -13,12 +13,12 @@ struct GroupsResponse: Codable {
 
 // MARK: - Item
 struct Group: Codable {
-    let status: String
-    let isMember, membersCount, id: Int
-    let photo100: String
-    let isAdvertiser, isAdmin: Int
-    let type, screenName, name: String
-    let isClosed: Int
+    let status: String?
+    let isMember, membersCount, id: Int?
+    let photo100: String?
+    let isAdvertiser, isAdmin: Int?
+    let type, screenName, name: String?
+    let isClosed: Int?
 
     enum CodingKeys: String, CodingKey {
         case status

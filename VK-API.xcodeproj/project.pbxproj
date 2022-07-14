@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950140A528782F6300D97222 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 950140A428782F6300D97222 /* SDWebImage */; };
+		950140A828782F9A00D97222 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 950140A728782F9A00D97222 /* SwiftKeychainWrapper */; };
+		950140AA2878315300D97222 /* PostAuthorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950140A92878315300D97222 /* PostAuthorCell.swift */; };
+		950140AC2878316200D97222 /* PostLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950140AB2878316200D97222 /* PostLikeCell.swift */; };
+		950140AE2878318400D97222 /* PostPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950140AD2878318400D97222 /* PostPhotoCell.swift */; };
+		950140B02878319700D97222 /* PostTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950140AF2878319700D97222 /* PostTextCell.swift */; };
+		950140B328783AD600D97222 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 950140B228783AD600D97222 /* SnapKit */; };
 		9517F9E6286A1EB100CE77E9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9517F9E5286A1EB100CE77E9 /* Session.swift */; };
 		9517F9EA286A1FD300CE77E9 /* FriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9517F9E9286A1FD300CE77E9 /* FriendsVC.swift */; };
 		953171012873755A0030C6EF /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953171002873755A0030C6EF /* GroupsVC.swift */; };
@@ -16,6 +23,7 @@
 		9539C24828718D310061FC85 /* FriendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9539C24728718D310061FC85 /* FriendAPI.swift */; };
 		9539C24C28718DF30061FC85 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9539C24B28718DF30061FC85 /* Friend.swift */; };
 		9539C24E287191920061FC85 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9539C24D287191920061FC85 /* Data+PrettyJSON.swift */; };
+		955F87AE28801F5000797B31 /* PostCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955F87AD28801F5000797B31 /* PostCellModel.swift */; };
 		95711A002871A26F00A5EFC5 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957119FF2871A26F00A5EFC5 /* MainTabBar.swift */; };
 		957BAE35286B10FF0021DC8C /* UIVIew+PinEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957BAE34286B10FF0021DC8C /* UIVIew+PinEdges.swift */; };
 		957BAE37286B14040021DC8C /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957BAE36286B14040021DC8C /* FriendCell.swift */; };
@@ -29,11 +37,17 @@
 		95DCEF202874AFE000783127 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF1F2874AFE000783127 /* PhotoVC.swift */; };
 		95DCEF232874C4EE00783127 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF222874C4EE00783127 /* PhotoCell.swift */; };
 		95DCEF262874D01800783127 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF252874D01800783127 /* Photo.swift */; };
-		C39EA899978ED84F7F4E0533 /* Pods_VK_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A930B4A918CBCE9C05795973 /* Pods_VK_API.framework */; };
+		95DCEF282876EAAF00783127 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF272876EAAF00783127 /* NewsAPI.swift */; };
+		95DCEF2A2876EB0300783127 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF292876EB0300783127 /* Post.swift */; };
+		95DCEF2C2876EB2F00783127 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF2B2876EB2F00783127 /* NewsFeedVC.swift */; };
+		95DCEF322876EBB300783127 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DCEF312876EBB300783127 /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C30E2DF986AEF5DE57AB893 /* Pods-VK-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API.release.xcconfig"; path = "Target Support Files/Pods-VK-API/Pods-VK-API.release.xcconfig"; sourceTree = "<group>"; };
+		950140A92878315300D97222 /* PostAuthorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthorCell.swift; sourceTree = "<group>"; };
+		950140AB2878316200D97222 /* PostLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLikeCell.swift; sourceTree = "<group>"; };
+		950140AD2878318400D97222 /* PostPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPhotoCell.swift; sourceTree = "<group>"; };
+		950140AF2878319700D97222 /* PostTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTextCell.swift; sourceTree = "<group>"; };
 		9517F9E5286A1EB100CE77E9 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		9517F9E9286A1FD300CE77E9 /* FriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsVC.swift; sourceTree = "<group>"; };
 		953171002873755A0030C6EF /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
@@ -43,6 +57,7 @@
 		9539C24728718D310061FC85 /* FriendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAPI.swift; sourceTree = "<group>"; };
 		9539C24B28718DF30061FC85 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		9539C24D287191920061FC85 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
+		955F87AD28801F5000797B31 /* PostCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellModel.swift; sourceTree = "<group>"; };
 		957119FF2871A26F00A5EFC5 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		957BAE34286B10FF0021DC8C /* UIVIew+PinEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+PinEdges.swift"; sourceTree = "<group>"; };
 		957BAE36286B14040021DC8C /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
@@ -58,8 +73,10 @@
 		95DCEF1F2874AFE000783127 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		95DCEF222874C4EE00783127 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		95DCEF252874D01800783127 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		A930B4A918CBCE9C05795973 /* Pods_VK_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2C8F4DDC4F6FCDE2F50EF40 /* Pods-VK-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK-API.debug.xcconfig"; path = "Target Support Files/Pods-VK-API/Pods-VK-API.debug.xcconfig"; sourceTree = "<group>"; };
+		95DCEF272876EAAF00783127 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		95DCEF292876EB0300783127 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		95DCEF2B2876EB2F00783127 /* NewsFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
+		95DCEF312876EBB300783127 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,21 +84,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39EA899978ED84F7F4E0533 /* Pods_VK_API.framework in Frameworks */,
+				950140B328783AD600D97222 /* SnapKit in Frameworks */,
+				950140A828782F9A00D97222 /* SwiftKeychainWrapper in Frameworks */,
+				950140A528782F6300D97222 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B71F8AE883E400B4778BC4D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A930B4A918CBCE9C05795973 /* Pods_VK_API.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		9517F9E4286A1E8D00CE77E9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 				9539C24728718D310061FC85 /* FriendAPI.swift */,
 				95317102287375750030C6EF /* GroupAPI.swift */,
 				95DCEF1D2874AFAE00783127 /* PhotoAPI.swift */,
+				95DCEF272876EAAF00783127 /* NewsAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -116,6 +128,15 @@
 				9539C24B28718DF30061FC85 /* Friend.swift */,
 				95317108287383710030C6EF /* Group.swift */,
 				95DCEF252874D01800783127 /* Photo.swift */,
+				95DCEF292876EB0300783127 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		955F87AF28801F6D00797B31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				955F87AD28801F5000797B31 /* PostCellModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,8 +197,6 @@
 			children = (
 				95B526832865BD8E00235637 /* VK-API */,
 				95B526822865BD8E00235637 /* Products */,
-				B1C1C23EDFF24308842593A1 /* Pods */,
-				2B71F8AE883E400B4778BC4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +216,7 @@
 				9539C24A28718DC40061FC85 /* Models */,
 				9517F9E4286A1E8D00CE77E9 /* Services */,
 				957BAE33286B10CF0021DC8C /* Extensions */,
+				95DCEF302876EB9F00783127 /* Helpers */,
 				95B5269D2865C21F00235637 /* Resources */,
 			);
 			path = "VK-API";
@@ -219,6 +239,7 @@
 				953170FF2873751F0030C6EF /* Groups */,
 				957BAE3A286B144E0021DC8C /* Friends */,
 				95DCEF212874AFEA00783127 /* Photos */,
+				95DCEF2D2876EB3800783127 /* News */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -250,13 +271,33 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		B1C1C23EDFF24308842593A1 /* Pods */ = {
+		95DCEF2D2876EB3800783127 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				D2C8F4DDC4F6FCDE2F50EF40 /* Pods-VK-API.debug.xcconfig */,
-				7C30E2DF986AEF5DE57AB893 /* Pods-VK-API.release.xcconfig */,
+				95DCEF2B2876EB2F00783127 /* NewsFeedVC.swift */,
+				955F87AF28801F6D00797B31 /* Models */,
+				95DCEF332876EC5400783127 /* Cells */,
 			);
-			path = Pods;
+			path = News;
+			sourceTree = "<group>";
+		};
+		95DCEF302876EB9F00783127 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95DCEF312876EBB300783127 /* Formatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		95DCEF332876EC5400783127 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				950140A92878315300D97222 /* PostAuthorCell.swift */,
+				950140AB2878316200D97222 /* PostLikeCell.swift */,
+				950140AD2878318400D97222 /* PostPhotoCell.swift */,
+				950140AF2878319700D97222 /* PostTextCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,17 +307,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95B526952865BD8F00235637 /* Build configuration list for PBXNativeTarget "VK-API" */;
 			buildPhases = (
-				FE25C2B1DC69C69C1BE8EC4A /* [CP] Check Pods Manifest.lock */,
 				95B5267D2865BD8E00235637 /* Sources */,
 				95B5267E2865BD8E00235637 /* Frameworks */,
 				95B5267F2865BD8E00235637 /* Resources */,
-				8849F7C21CF4C9AB0879EF33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "VK-API";
+			packageProductDependencies = (
+				950140A428782F6300D97222 /* SDWebImage */,
+				950140A728782F9A00D97222 /* SwiftKeychainWrapper */,
+				950140B228783AD600D97222 /* SnapKit */,
+			);
 			productName = "VK-API";
 			productReference = 95B526812865BD8E00235637 /* VK-API.app */;
 			productType = "com.apple.product-type.application";
@@ -305,6 +349,11 @@
 				Base,
 			);
 			mainGroup = 95B526782865BD8E00235637;
+			packageReferences = (
+				950140A328782F6300D97222 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				950140A628782F9A00D97222 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				950140B128783AD600D97222 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 95B526822865BD8E00235637 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,48 +375,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		8849F7C21CF4C9AB0879EF33 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VK-API/Pods-VK-API-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VK-API/Pods-VK-API-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VK-API/Pods-VK-API-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE25C2B1DC69C69C1BE8EC4A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VK-API-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		95B5267D2865BD8E00235637 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -378,19 +385,28 @@
 				95711A002871A26F00A5EFC5 /* MainTabBar.swift in Sources */,
 				95317109287383710030C6EF /* Group.swift in Sources */,
 				95DCEF262874D01800783127 /* Photo.swift in Sources */,
+				95DCEF282876EAAF00783127 /* NewsAPI.swift in Sources */,
+				95DCEF2A2876EB0300783127 /* Post.swift in Sources */,
 				957BAE3E286B20A50021DC8C /* FriendVC1.swift in Sources */,
+				955F87AE28801F5000797B31 /* PostCellModel.swift in Sources */,
+				950140AA2878315300D97222 /* PostAuthorCell.swift in Sources */,
 				9539C24828718D310061FC85 /* FriendAPI.swift in Sources */,
 				957BAE37286B14040021DC8C /* FriendCell.swift in Sources */,
 				9517F9E6286A1EB100CE77E9 /* Session.swift in Sources */,
 				957BAE3C286B14F30021DC8C /* AuthorizeVC.swift in Sources */,
+				950140AC2878316200D97222 /* PostLikeCell.swift in Sources */,
 				95B526852865BD8E00235637 /* AppDelegate.swift in Sources */,
 				957BAE35286B10FF0021DC8C /* UIVIew+PinEdges.swift in Sources */,
 				95DCEF232874C4EE00783127 /* PhotoCell.swift in Sources */,
 				9539C24C28718DF30061FC85 /* Friend.swift in Sources */,
+				950140AE2878318400D97222 /* PostPhotoCell.swift in Sources */,
 				95DCEF1E2874AFAE00783127 /* PhotoAPI.swift in Sources */,
+				950140B02878319700D97222 /* PostTextCell.swift in Sources */,
+				95DCEF322876EBB300783127 /* Formatter.swift in Sources */,
 				95B526872865BD8E00235637 /* SceneDelegate.swift in Sources */,
 				953171012873755A0030C6EF /* GroupsVC.swift in Sources */,
 				9517F9EA286A1FD300CE77E9 /* FriendsVC.swift in Sources */,
+				95DCEF2C2876EB2F00783127 /* NewsFeedVC.swift in Sources */,
 				9539C24E287191920061FC85 /* Data+PrettyJSON.swift in Sources */,
 				95DCEF202874AFE000783127 /* PhotoVC.swift in Sources */,
 			);
@@ -528,7 +544,6 @@
 		};
 		95B526962865BD8F00235637 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2C8F4DDC4F6FCDE2F50EF40 /* Pods-VK-API.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,7 +571,6 @@
 		};
 		95B526972865BD8F00235637 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C30E2DF986AEF5DE57AB893 /* Pods-VK-API.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -604,6 +618,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		950140A328782F6300D97222 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		950140A628782F9A00D97222 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		950140B128783AD600D97222 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		950140A428782F6300D97222 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 950140A328782F6300D97222 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		950140A728782F9A00D97222 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 950140A628782F9A00D97222 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		950140B228783AD600D97222 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 950140B128783AD600D97222 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95B526792865BD8E00235637 /* Project object */;
 }

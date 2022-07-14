@@ -12,7 +12,8 @@ final class FriendsVC: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(FriendCell.self, forCellReuseIdentifier: FriendCell.identifire)
+        tableView.register(FriendCell.self, forCellReuseIdentifier: FriendCell.identifier)
+        tableView.separatorColor = .clear
         return tableView
     }()
     
@@ -34,16 +35,17 @@ final class FriendsVC: UIViewController {
 }
 
 extension FriendsVC: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
     }
 }
 
 extension FriendsVC: UITableViewDataSource {
-    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return friends.count
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.identifire) as? FriendCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.identifier) as? FriendCell else {return UITableViewCell()}
         let friend = friends[indexPath.row]
        
         cell.configure(friend)
