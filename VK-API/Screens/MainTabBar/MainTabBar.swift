@@ -13,12 +13,15 @@ final class MainTabBar: UITabBarController {
         groupsVC.tabBarItem.title = "Groups"
         groupsVC.tabBarItem.image = UIImage(systemName: "person.3")
         
-        let photoVC = PhotoVC()
-        photoVC.tabBarItem.title = "Photos"
-        photoVC.tabBarItem.image = UIImage(systemName: "photo")
+        let photosVC = PhotoVC()
+        photosVC.tabBarItem.title = "Photos"
+        photosVC.tabBarItem.image = UIImage(systemName: "photo")
         
-        viewControllers = [friendsVC,groupsVC,photoVC]
+        let newsVC = NewsFeedVC()
+        newsVC.tabBarItem.title = "News"
+        newsVC.tabBarItem.image = UIImage(systemName: "newspaper")
+        
+        viewControllers = [friendsVC,groupsVC,photosVC,newsVC]
         
     }
-
 }

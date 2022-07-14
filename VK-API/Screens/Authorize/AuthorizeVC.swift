@@ -45,7 +45,7 @@ final class AuthorizeVC: UIViewController {
             URLQueryItem(name: "client_id", value: "8202604"),
             URLQueryItem(name: "display", value: "mobile"),
             URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
-            URLQueryItem(name: "scope", value: "271390"),
+            URLQueryItem(name: "scope", value: "271366"),
             URLQueryItem(name: "response_type", value: "token"),
             URLQueryItem(name: "revoke", value: "1")
         ]

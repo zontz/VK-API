@@ -4,7 +4,7 @@ import Foundation
 
 final class GroupCell: UITableViewCell {
     
-    static let identifire = "GroupCell"
+    static let identifier = "GroupCell"
     
     private lazy var statusLabel:UILabel = {
         var label = UILabel()
@@ -94,17 +94,9 @@ final class GroupCell: UITableViewCell {
     }
     
     func configure(_ group:Group) {
-        photoImageView.sd_setImage(with: URL(string: group.photo100))
+        photoImageView.sd_setImage(with: URL(string: group.photo100 ?? ""))
         nameLabel.text = group.name
         statusLabel.text = group.status
-        membersCountLabel.text = membersCountDisplay(group.membersCount) + " " + "подписчика"
-    }
-    
-    private func membersCountDisplay(_ value:Int)->String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.groupingSeparator = " "
-        formatter.groupingSize = 3
-        return String((formatter.string(for: value) ?? ""))
+        membersCountLabel.text = Formatter.membersCount(group.membersCount ?? 0) + " " + "подписчика"
     }
 }

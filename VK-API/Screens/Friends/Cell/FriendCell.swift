@@ -3,7 +3,7 @@ import SDWebImage
 
 final class FriendCell: UITableViewCell {
     
-    static let identifire = "FriendCell"
+    static let identifier = "FriendCell"
     
     
     private lazy var nameLabel:UILabel = {
